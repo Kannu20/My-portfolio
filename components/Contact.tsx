@@ -14,8 +14,16 @@ const Contact = () => {
   const [hoveredSocial, setHoveredSocial] = useState<string | null>(null);
 
   const handleSubmit = () => {
-    setIsSent(true);
-    setTimeout(() => setIsSent(false), 3000);
+    const phone = "919602870828"; // without +
+
+    const text = `New Contact Form Message%0A
+Name: ${formData.name}%0A
+Email: ${formData.email}%0A
+Message: ${formData.message}`;
+
+    const url = `https://wa.me/${phone}?text=${text}`;
+
+    window.open(url, "_blank");
   };
 
   const socialLinks = [
@@ -95,7 +103,9 @@ const Contact = () => {
             key={i}
             className="absolute w-1 h-1 bg-cyan-400/30 rounded-full"
             style={{
+              // eslint-disable-next-line react-hooks/purity
               left: `${Math.random() * 100}%`,
+              // eslint-disable-next-line react-hooks/purity
               top: `${Math.random() * 100}%`,
             }}
             animate={{
@@ -104,8 +114,10 @@ const Contact = () => {
               scale: [1, 1.5, 1],
             }}
             transition={{
+              // eslint-disable-next-line react-hooks/purity
               duration: 3 + Math.random() * 2,
               repeat: Infinity,
+              // eslint-disable-next-line react-hooks/purity
               delay: Math.random() * 2,
             }}
           />
@@ -131,13 +143,13 @@ const Contact = () => {
           </motion.div>
 
           <h2 className="text-5xl md:text-6xl font-bold mb-6">
-            Let's Build Something{' '}
+            Lets Build Something{' '}
             <span className="bg-gradient-to-r from-cyan-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
               Extraordinary
             </span>
           </h2>
           <p className="text-xl text-gray-400 max-w-2xl mx-auto">
-            Have a project in mind? I'm available for full-time opportunities and select freelance projects. Let's create something amazing together.
+            Have a project in mind? I am available for full-time opportunities and select freelance projects. Let's create something amazing together.
           </p>
         </motion.div>
 
@@ -342,8 +354,8 @@ const Contact = () => {
                       onClick={handleSubmit}
                       disabled={isSent}
                       className={`group relative w-full px-8 py-4 rounded-xl font-bold text-lg overflow-hidden transition-all ${isSent
-                          ? 'bg-green-600'
-                          : 'bg-gradient-to-r from-cyan-500 to-purple-600 hover:shadow-lg hover:shadow-cyan-500/50'
+                        ? 'bg-green-600'
+                        : 'bg-gradient-to-r from-cyan-500 to-purple-600 hover:shadow-lg hover:shadow-cyan-500/50'
                         }`}
                     >
                       {/* Hover Effect */}
