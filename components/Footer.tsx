@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import { Github, Linkedin, Mail } from 'lucide-react';
+import { Github, Instagram, Linkedin, Mail } from 'lucide-react';
 
 const Footer = () => {
   return (
@@ -38,6 +38,15 @@ const Footer = () => {
             className="text-gray-400 hover:text-cyan-400 transition-colors"
           >
             <Linkedin size={18} />
+          </a>
+          <a
+          
+            href="https://www.instagram.com/kanishak020/"
+            target="_blank"
+            className = "text-gray-400 hover:text-cyan-400 transition-colors"
+            >
+            <Instagram size={18} />
+
           </a>
           <a
             href="mailto:kannutodwal@gmail.com"
