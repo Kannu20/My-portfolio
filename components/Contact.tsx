@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Github, Linkedin, Mail, Send, MapPin, Phone, Calendar, MessageCircle, Sparkles, Check, ArrowRight, MessageSquare } from 'lucide-react';
+import { Github, Linkedin, Mail, Send, MapPin, Phone, Calendar, MessageCircle, Sparkles, Check, ArrowRight, MessageSquare, FileCode  } from 'lucide-react';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -42,6 +42,14 @@ Message: ${formData.message}`;
       username: '/in/Kanishak-Todwal',
       color: 'from-blue-600 to-blue-800',
       hoverColor: 'hover:from-blue-500 hover:to-blue-700'
+    },
+    {
+      icon: FileCode ,
+      label: 'LeetCode',
+      href: 'https://leetcode.com/u/123kannu/',
+      username: '@123kannu',
+      color: 'from-black-600 to-yellow-800',
+      hoverColor: 'hover:from-black-500 hover:to-yellow-700'
     },
     {
       icon: MessageSquare,
