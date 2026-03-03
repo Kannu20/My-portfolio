@@ -25,7 +25,7 @@ const Projects = () => {
       ],
       image: 'https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=800&h=600&fit=crop',
       githubUrl: 'https://github.com/Kannu20/careecompass',
-      liveUrl: 'https://career-compass.vercel.app'
+      liveUrl: 'https://career-compass-plum-five.vercel.app/'
     },
     {
       id: 2,
