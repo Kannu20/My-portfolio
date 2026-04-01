@@ -28,23 +28,23 @@ const Projects = () => {
       liveUrl: 'https://career-compass-plum-five.vercel.app/'
     },
     {
-  id: 2,
-  title: 'Nexus AI',
-  subtitle: 'AI-Based Multi-Asset Investment Analysis Platform',
-  problem: 'Retail investors struggle to analyze and manage investments across multiple asset classes like stocks, crypto, and mutual funds due to lack of insights and fragmented tools',
-  solution: 'Developed an AI-powered platform that analyzes multiple asset classes, provides smart insights, and helps users make data-driven investment decisions through a unified dashboard',
-  impact: 'Enabled users to track and optimize multi-asset portfolios efficiently, reducing analysis time and improving decision-making accuracy',
-  tech: ['Next.js', 'Node.js', 'MongoDB', 'AI/ML APIs', 'Tailwind CSS'],
-  color: 'from-indigo-500 to-blue-600',
-  stats: [
-    { icon: Users, label: 'Target Users', value: 'Retail Investors' },
-    { icon: Zap, label: 'Core Feature', value: 'AI Insights' },
-    { icon: Award, label: 'Category', value: 'FinTech AI' },
-  ],
-  image: 'https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=800&h=600&fit=crop',
-  githubUrl: 'https://github.com/Kannu20/nexusai-trading-assitant-platform',
-  liveUrl: 'https://nexusai-trading-assitant-platform.vercel.app/'
-},
+      id: 2,
+      title: 'Nexus AI',
+      subtitle: 'AI-Based Multi-Asset Investment Analysis Platform',
+      problem: 'Retail investors struggle to analyze and manage investments across multiple asset classes like stocks, crypto, and mutual funds due to lack of insights and fragmented tools',
+      solution: 'Developed an AI-powered platform that analyzes multiple asset classes, provides smart insights, and helps users make data-driven investment decisions through a unified dashboard',
+      impact: 'Enabled users to track and optimize multi-asset portfolios efficiently, reducing analysis time and improving decision-making accuracy',
+      tech: ['Next.js', 'Node.js', 'MongoDB', 'AI/ML APIs', 'Tailwind CSS'],
+      color: 'from-indigo-500 to-blue-600',
+      stats: [
+        { icon: Users, label: 'Target Users', value: 'Retail Investors' },
+        { icon: Zap, label: 'Core Feature', value: 'AI Insights' },
+        { icon: Award, label: 'Category', value: 'FinTech AI' },
+      ],
+      image: 'https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=800&h=600&fit=crop',
+      githubUrl: 'https://github.com/Kannu20/nexusai-trading-assitant-platform',
+      liveUrl: 'https://nexusai-trading-assitant-platform.vercel.app/'
+    },
     {
       id: 3,
       title: 'Blog Ocean',
@@ -420,7 +420,7 @@ const Projects = () => {
                 </div>
 
                 {/* Image */}
-                <div 
+                <div
                   className="relative rounded-2xl overflow-hidden mb-8 aspect-video cursor-pointer"
                   onClick={() => handleProjectClick(activeProject.liveUrl)}
                 >
