@@ -28,7 +28,25 @@ const Projects = () => {
       liveUrl: 'https://career-compass-plum-five.vercel.app/'
     },
     {
-      id: 2,
+  id: 2,
+  title: 'Nexus AI',
+  subtitle: 'AI-Based Multi-Asset Investment Analysis Platform',
+  problem: 'Retail investors struggle to analyze and manage investments across multiple asset classes like stocks, crypto, and mutual funds due to lack of insights and fragmented tools',
+  solution: 'Developed an AI-powered platform that analyzes multiple asset classes, provides smart insights, and helps users make data-driven investment decisions through a unified dashboard',
+  impact: 'Enabled users to track and optimize multi-asset portfolios efficiently, reducing analysis time and improving decision-making accuracy',
+  tech: ['Next.js', 'Node.js', 'MongoDB', 'AI/ML APIs', 'Tailwind CSS'],
+  color: 'from-indigo-500 to-blue-600',
+  stats: [
+    { icon: Users, label: 'Target Users', value: 'Retail Investors' },
+    { icon: Zap, label: 'Core Feature', value: 'AI Insights' },
+    { icon: Award, label: 'Category', value: 'FinTech AI' },
+  ],
+  image: 'https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=800&h=600&fit=crop',
+  githubUrl: 'https://github.com/Kannu20/nexusai-trading-assitant-platform',
+  liveUrl: 'https://nexusai-trading-assitant-platform.vercel.app/'
+},
+    {
+      id: 3,
       title: 'Blog Ocean',
       subtitle: 'Full-Stack Blogging Platform',
       problem: 'Content creators need a simple platform to write, manage, and publish blogs securely',
@@ -46,7 +64,7 @@ const Projects = () => {
       liveUrl: 'https://blog-izeh.vercel.app/'
     },
     {
-      id: 3,
+      id: 4,
       title: 'TeleHealth Connect',
       subtitle: 'Online Doctor Consultation System',
       problem: 'Patients face difficulty accessing doctors for basic consultations and appointment booking',
@@ -64,7 +82,7 @@ const Projects = () => {
       liveUrl: 'https://telehealth-iota.vercel.app/'
     },
     {
-      id: 4,
+      id: 5,
       title: 'E-Commerce Platform',
       subtitle: 'Multi-Vendor Marketplace System',
       problem: 'Vendors and admins need a centralized system to manage products, orders, and users',
